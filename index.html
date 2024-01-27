@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="shortcut icon" href="assets/Vector.svg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/6ce55e9e9c.js" crossorigin="anonymous"></script>
+  <!-- ========== All CSS files linkup ========= -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+  <div id="preloader">
+    <img src="assets/SVKl.gif"  class="pre" alt="">
+  </div>
+  <!-- ======== sidebar-nav start =========== -->
+  <aside class="sidebar-nav-wrapper">
+    <div class="navbar-logo">
+      <a href="#">
+        <img src="assets/Vector.svg" alt="">
+      </a>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="nav-item">
+          <a href="#0">
+            <img src="assets/Frame 12(1).svg" alt="">
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="assets/Component 10.svg" alt="">
+            <span class="text">Services</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#0">
+            <img src="assets/Component 9.svg" alt="">
+            <span class="text">User</span>
+          </a>
+
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img src="assets/Frame 12.svg" alt="">
+            <span class="text">Analytics </span>
+          </a>
+
+        <li class="nav-item">
+          <a href="#0">
+            <img src="assets/Icon.svg" alt="">
+            <span class="text">Settings</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#0">
+            <img src="assets/Component 12.svg" alt="">
+            <span class="text">Info</span>
+          </a>
+        </li>
+
+        <li class="nav-item light">
+
+          <div class="">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+        </li>
+
+        <div class="bottom-bars">
+          <li class="nav-item">
+            <a href="#0">
+              <img src="assets/Icon.svg" alt="">
+              <span class="text">Settings</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#0">
+              <img src="assets/Component 12.svg" alt="">
+              <span class="text">Notification</span>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="#0">
+              <img src="assets/Icon.svg" alt="">
+              <span class="text">Settings</span>
+            </a>
+          </li>
+        </div>
+
+      </ul>
+    </nav>
+
+  </aside>
+  <div class="overlay"></div>
+  <!-- ======== sidebar-nav end =========== -->
+
+  <!-- ======== main-wrapper start =========== -->
+  <main class="main-wrapper">
+    <!-- ========== header start ========== -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-6">
+            <div class="header-left d-flex align-items-center">
+              <div class="header-title d-none d-md-flex">
+                <h4>Dashboard</h4>
+              </div>
+              <div class="menu-toggle-btn mr-20">
+                <button id="menu-toggle" class="main-btn primary-btn btn-hover">
+                  <i class="fa-solid fa-caret-left me-2"></i>
+                </button>
+              </div>
+              <div class="header-search d-none d-lg-flex">
+                <form action="#">
+                  <input type="text" placeholder="Search..." />
+                  <button role="link"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-7 col-6">
+            <div class="header-right ml-2">
+              <!-- notification start -->
+              <div class="notification-box ml-15 d-none d-md-flex rounded-pill">
+                <img src="assets/Group.png" alt="" width="18" height="18">
+                <div class="date"></div>
+              </div>
+              <!-- notification end -->
+
+              <!-- message start -->
+              <div class="header-message-box ml-15 d-none d-md-flex">
+                <button class="dropdown-toggle" type="button" id="message" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <!-- <i class="lni lni-alarm"></i> -->
+                  <i class="fa-regular fa-bell"></i>
+                  <span>1</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="message">
+                  <li>
+                    <a href="#0">
+                      <div class="image">
+                        <img src="assets/Frame 1000003208 (3).png" alt="" />
+                      </div>
+                      <div class="content">
+                        <h6>Ronaldo</h6>
+                        <p>Hey!I can across your profile and ...</p>
+                        <span>10 mins ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <div class="image">
+                        <img src="assets/Frame 1000003208 (2).png" alt="" />
+                      </div>
+                      <div class="content">
+                        <h6>Messi</h6>
+                        <p>Would you mind please checking out</p>
+                        <span>12 mins ago</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <div class="image">
+                        <img src="assets/Frame 1000003208 (4).png" alt="" />
+                      </div>
+                      <div class="content">
+                        <h6>Kdb</h6>
+                        <p>Hey! are you available for freelance?</p>
+                        <span>1h ago</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- message end -->
+              <!-- profile start -->
+              <div class="profile-box ml-15">
+                <button class="dropdown-toggle  profile-button rounded-pill pt-4 pb-4"
+                  type="button" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="profile-info ">
+                    <div class="info">
+                      <div class="image">
+                        <img src="assets/Rectangle 1061.png" alt="" />
+                        <span class="status"></span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <i class="lni lni-chevron-down"></i> -->
+                  <i class="fa-solid fa-caret-down"></i>
+                  <div class="email">
+                    <h6>Justin Bergson</h6>
+                    <p>justin@email.com</p>
+                  </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                  <li>
+                    <a href="#0">
+                      <i class="lni lni-user"></i> View Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="lni lni-alarm"></i> Notifications
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                  </li>
+              </div>
+              </ul>
+
+              <!-- profile end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ========== header end ========== -->
+
+    <div class="container-fluid">
+      <main class="chartings">
+        <div class="row">
+          <div class="col-lg-7  shadow">
+            <div class="headings mt-3 ">
+              <div class="title">
+                <h3>Sales Trend</h3>
+              </div>
+              <div class="years">
+                <h3>Monthly</h3>
+              </div>
+              <div class="sorting">
+                <div class="dropdown open">
+                  <a class="btn dropdown-toggle rounded-pill border-1" type="button" id="triggerId"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    sort by:
+                  </a>
+                  <div class="dropdown-menu dropdown-menu2" aria-labelledby="triggerId">
+                    <a class="dropdown-item" href="#" id="yearly">Yearly</a>
+                    <a class="dropdown-item" href="#" id="monthly">Monthly</a>
+                    <a class="dropdown-item" href="#" id="weekly">Weekly</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="chart1">
+              <canvas id="myChart" height="300px"></canvas>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="row cards">
+              <div class="col-lg-5 shadow">
+
+
+                <div class="card ">
+                  <div class="card-top">
+                    <div class="card-img">
+                      <img class="card-img-top" src="assets/box-tick.svg" alt="Title" />
+                    </div>
+
+                    <div class="chart">
+                      <canvas id="myChart2" height="100" width="130"></canvas>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Total order</h5>
+                    <h5 class="card-text">350</h5>
+                  </div>
+                  <div class="card-summary">
+                    <small class="analysis rounded-pill">
+                      <i class="fa-solid fa-arrow-trend-up"></i> 23.5%
+                    </small>
+                    <small> vs .previous </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 shadow">
+                <div class="card ">
+                  <div class="card-top">
+                    <div class="card-img">
+                      <img class="card-img-top" src="assets/box-tick1.svg" alt="Title" />
+                    </div>
+
+                    <div class="chart">
+                      <canvas id="myChart5" height="100" width="130"></canvas>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Total refund</h5>
+                    <h5 class="card-text">270</h5>
+                  </div>
+                  <div class="card-summary">
+                    <small class="analysis1 rounded-pill">
+                      <i class="fa-solid fa-arrow-trend-down"></i> 23.5%
+                    </small>
+                    <small> vs .previous </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 shadow">
+                <div class="card ">
+                  <div class="card-top">
+                    <div class="card-img">
+                      <img class="card-img-top" src="assets/shopping-cart.svg" alt="Title" />
+                    </div>
+
+                    <div class="chart">
+                      <canvas id="myChart4" height="100" width="130"></canvas>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Average sales</h5>
+                    <h5 class="card-text">350</h5>
+                  </div>
+                  <div class="card-summary">
+                    <small class="analysis1 rounded-pill">
+                      <i class="fa-solid fa-arrow-trend-down"></i> 23.5%
+                    </small>
+                    <small> vs .previous </small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-5 shadow">
+                <div class="card ">
+                  <div class="card-top">
+                    <div class="card-img">
+                      <img class="card-img-top" src="assets/coin.svg" alt="Title" />
+                    </div>
+
+                    <div class="chart">
+                      <canvas id="myChart3" height="100" width="130"></canvas>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title text-secondary">Total Income</h5>
+                    <h5 class="card-text">$350.000</h5>
+                  </div>
+                  <div class="card-summary">
+                    <small class="analysis rounded-pill">
+                      <i class="fa-solid fa-arrow-trend-up"></i> 23.5%
+                    </small>
+                    <small> vs .previous </small>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </main>
+
+
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="table-responsive-md shadow mt-4">
+            <div class="table-headings">
+              <p>Last orders</p>
+              <h6>See all</h6>
+            </div>
+            <table class="table   table-borderless align-middle">
+
+              <thead class="table">
+                <tr>
+                  <th>
+                    <p>Name</p>
+                  </th>
+                  <th>
+                    <p>Date</p>
+                  </th>
+                  <th>
+                    <p>Amount</p>
+                  </th>
+                  <th>
+                    <p>Status</p>
+                  </th>
+                  <th>
+                    <p>Invoice</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr class="">
+                  <td scope="row">
+                    <img src="assets/Frame 1000003208.png" alt="">
+                    <b>Marcus Bergson</b>
+                  </td>
+                  <td>Nov 15, 2023</td>
+                  <td><strong>$80,000</strong></td>
+                  <td class="text-success">paid</td>
+                  <td data-bs-toggle="modal" data-bs-target=".modalId"> <img src="assets/document-download.png" alt="">
+                    view</td>
+                </tr>
+                <tr class="">
+                  <td>
+                    <img src="assets/Frame 1000003208 (1).png" alt="">
+
+                    <b>Jaydon vaccaro</b>
+                  </td>
+                  <td>Nov 15, 2023</td>
+                  <td><strong>$80,000</strong></td>
+                  <td class="text-danger">Refund</td>
+                  <td data-bs-toggle="modal" data-bs-target=".modalId2">
+                    <img src="assets/document-download.png" alt="">
+                    view
+                  </td>
+                </tr>
+                <tr class="">
+                  <td>
+                    <img src="assets/Frame 1000003208 (2).png" alt="">
+
+                    <b>Corey Scheifler</b>
+                  </td>
+                  <td>Nov 15, 2023</td>
+                  <td><strong>$80,000</strong></td>
+                  <td class="text-success">Paid</td>
+                  <td data-bs-toggle="modal" data-bs-target=".modalId">
+                    <img src="assets/document-download.png" alt="">
+                    view
+                  </td>
+                </tr>
+                <tr class="">
+                  <td>
+                    <img src="assets/Frame 1000003208 (3).png" alt="">
+
+                    <b>Cooper Press</b>
+                  </td>
+                  <td>Nov 15, 2023</td>
+                  <td><strong>$80,000</strong></td>
+                  <td class="text-danger">Refund</td>
+                  <td data-bs-toggle="modal" data-bs-target=".modalId2"> <img src="assets/document-download.png" alt="">
+                    view</td>
+                </tr>
+                <tr class="">
+                  <td>
+                    <img src="assets/Frame 1000003208 (4).png" alt="">
+                    <b>Phillip Lubin</b>
+                  </td>
+                  <td>Nov 15, 2023</td>
+                  <td><strong>$80,000</strong></td>
+                  <td class="text-success">Paid</td>
+                  <td type="button" data-bs-toggle="modal" dataf-bs-target=".modalId"> <img
+                      src="assets/document-download.png" alt="">
+                    view</td>
+                </tr>
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+          </div>
+
+        </div>
+        <div class="col-lg-5 shadow platforms" id="platformDiv">
+          <div class="platform-headings">
+            <p>Top platform</p>
+            <h6 id="toggleButton">See all</h6>
+          </div>
+          <div class="platform-body">
+            <h5>Book Bazar</h5>
+            <div class="progress rounded-pill">
+              <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated  " role="progressbar" style="width: 75%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <div class="progress-end">
+                <h5 class="text-secondary">$2,500,000</h5>
+                <h5 class="text-secondary">15%</h5>
+              </div>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+
+          </div>
+
+          <div class="platform-body">
+            <h5>Afcon cote</h5>
+            <div class="progress rounded-pill">
+              <div class="progress-bar bg-success progress-bar-striped progress-bar-animated " role="progressbar" style="width: 25%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+          <div class="platform-body">
+            <h5>Artisan</h5>
+            <div class="progress rounded-pill">
+              <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" role="progressbar" style="width: 55%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+          <div class="platform-body">
+            <h5>Toy store</h5>
+            <div class="progress rounded-pill">
+              <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+          <div class="platform-body">
+            <h5>Xstore</h5>
+            <div class="progress rounded-pill">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 30%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+          <div class="platform-body">
+            <h5>Geepay</h5>
+            <div class="progress rounded-pill progress-bar-striped progress-bar-animated">
+              <div class="progress-bar bg-dark" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+          <div class="platform-body">
+            <h5>Account</h5>
+            <div class="progress rounded-pill progress-bar-striped progress-bar-animated">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+          <div class="platform-body">
+            <h5>Hackathon</h5>
+            <div class="progress rounded-pill progress-bar-striped progress-bar-animated">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+          <div class="platform-body ">
+            <h5>Book Bazar</h5>
+            <div class="progress rounded-pill progress-bar-striped progress-bar-animated">
+              <div class="progress-bar bg-secondary" role="progressbar" style="width: 10%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+          <div class="platform-body">
+            <h5>Book Bazar</h5>
+            <div class="progress rounded-pill progress-bar-striped progress-bar-animated">
+              <div class="progress-bar bg-info " role="progressbar" style="width: 50%" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+            <div class="progress-end">
+              <h5 class="text-secondary">$2,500,000</h5>
+              <h5 class="text-secondary">15%</h5>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+      aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">
+              Modal title
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/green_double_circle_check_mark.jpg" alt="" width="100" height="100">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+      const myModal = new bootstrap.Modal(
+        document.getElementById("modalId"),
+        options,
+      );
+    </script>
+
+
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade modalId2" id="modalId2" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+      role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="assets/2022_ani_cartoon_214.jpg" alt="" height="100" width="100">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+      const myModal3 = new bootstrap.Modal(
+        document.getElementById("modalId2"),
+        options,
+      );
+    </script>
+
+  </main>
+
+<script src="assets/js/chart1.js"></script>
+<script src="assets/js/chart2.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
